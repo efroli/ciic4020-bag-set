@@ -12,4 +12,7 @@ public interface Set<E> extends Iterable<E> {
 	public Set<E> difference(Set<E> S2);
 	public Set<E> intersection(Set<E> S2);
 	public boolean isSubSet(Set<E> S2);
+	
+	//Exercise 2
+	public boolean equals(Set<E> S2);
 }

@@ -17,4 +17,7 @@ public interface Bag extends Iterable {
 	public boolean isMember(Object obj);
 	
 	public boolean isEmpty();
+	
+	//Exercise 1
+	public Bag moreFrequentThan(Object obj);
 }

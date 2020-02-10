@@ -73,4 +73,20 @@ public class DynamicBag implements Bag {
 		return this.bag.isEmpty();
 	}
 
+	//Exercise 1
+	@Override
+	public Bag moreFrequentThan(Object obj) 
+	{
+		Bag result = new DynamicBag(this.size());
+		if(!this.isMember(obj))
+			//null since obj is not a member of the bag
+			return null;
+		for(Object o: this)
+		{
+			if(!result.isMember(o) && this.count(o) > this.count(obj))
+				result.add(o);
+		}		
+		return result;
+	}
 }
+ 

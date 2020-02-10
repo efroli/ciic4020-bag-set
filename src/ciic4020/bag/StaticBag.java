@@ -110,4 +110,10 @@ public class StaticBag implements Bag {
 		return new BagIterator();
 	}
 
+	@Override
+	public Bag moreFrequentThan(Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

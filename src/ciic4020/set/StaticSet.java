@@ -143,4 +143,10 @@ public class StaticSet<E> implements Set<E> {
 		return new SetIterator<E>();
 	}
 
+	@Override
+	public boolean equals(Set<E> S2) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
