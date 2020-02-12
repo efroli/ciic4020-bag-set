@@ -143,10 +143,34 @@ public class StaticSet<E> implements Set<E> {
 		return new SetIterator<E>();
 	}
 
+	//Exercise 2 
 	@Override
 	public boolean equals(Set<E> S2) {
-		// TODO Auto-generated method stub
-		return false;
+		if(this.isSubSet(S2) && S2.isSubSet(this))
+			return true;
+		return false; 
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

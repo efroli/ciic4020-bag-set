@@ -72,6 +72,24 @@ public class SetTest {
 		S2.remove("Moe");
 		System.out.println("S2.isSubSet(theSet): " + S2.isSubSet(theSet));
 		
+		//Exercise 2
+		Set<String> S3 = input.equals("S") ? new StaticSet<String>(10) : new DynamicSet<String>(10);
+		S3.add("Amy");
+		S3.add("Jil");
+		S3.add("Moe");
+		S3.add("Ned");
+		
+		Set<String> S4 = input.equals("S") ? new StaticSet<String>(10) : new DynamicSet<String>(10);
+		S4.add("Amy");
+		S4.add("Jil");
+		S4.add("Moe");
+		S4.add("Ned");
+		System.out.println("S3.equals(S4): " + S3.equals(S4));
+		
+		S3.remove("Jil");
+		System.out.println("S4.equals(S3): " + S4.equals(S3));
+		//END Exercise 2
+		
 		System.out.println("Done!");
 		in.close();
 	}
