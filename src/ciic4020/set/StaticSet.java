@@ -151,6 +151,18 @@ public class StaticSet<E> implements Set<E> {
 		return false; 
 	}
 
+	//Exercise 4
+	@Override
+	public Set<Set<E>> singletonSet() 
+	{
+		// TODO Auto-generated method stub
+		Set<Set<E>> result = new StaticSet<Set<E>>(this.size());  
+		
+		//code here
+		
+		return result;
+	}
+
 }
 
 

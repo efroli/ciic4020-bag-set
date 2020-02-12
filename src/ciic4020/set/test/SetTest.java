@@ -91,7 +91,7 @@ public class SetTest {
 		//END Exercise 2
 		
 		//Exercise 3
-		checkDisjoint(theSet);
+		checkDisjoint();
 		//END Exercise 3
 		
 		System.out.println("Done!");
@@ -103,6 +103,7 @@ public class SetTest {
 	{
 		//returns true if the intersection of the array is empty. 
 		//false otherwise. 
+		
 		
 		return false; //dummy
 	}

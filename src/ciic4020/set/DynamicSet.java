@@ -102,6 +102,18 @@ public class DynamicSet<E> implements Set<E> {
 			return true;
 		return false; 
 	}	
+	
+	//Exercise 4
+		@Override
+		public Set<Set<E>> singletonSet() 
+		{
+			// TODO Auto-generated method stub
+			Set<Set<E>> result = new StaticSet<Set<E>>(this.size());  
+			
+			//code here
+			
+			return result;
+		}
 
 }
 
