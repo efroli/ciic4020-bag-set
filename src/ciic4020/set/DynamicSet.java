@@ -94,14 +94,14 @@ public class DynamicSet<E> implements Set<E> {
 		return this.theSet.isSubSet(S2);
 	}
 	
-	//Exercise 2 EN PROCESO
+	//Exercise 2 
 	@Override
 	public boolean equals(Set<E> S2) 
 	{
 		if(this.theSet.isSubSet(S2) && S2.isSubSet(this.theSet))
 			return true;
 		return false; 
-	}
+	}	
 
 }
 

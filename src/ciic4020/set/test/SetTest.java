@@ -90,10 +90,24 @@ public class SetTest {
 		System.out.println("S4.equals(S3): " + S4.equals(S3));
 		//END Exercise 2
 		
+		//Exercise 3
+		checkDisjoint(theSet);
+		//END Exercise 3
+		
 		System.out.println("Done!");
 		in.close();
 	}
 
+	//Exercise 3
+	public static boolean checkDisjoint(Object[] sets)
+	{
+		//returns true if the intersection of the array is empty. 
+		//false otherwise. 
+		
+		return false; //dummy
+	}
+	//END Exercise 3
+	
 	private static void printSet(Set theSet) {
 		for (Object obj : theSet)
 			System.out.println(obj);
