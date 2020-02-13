@@ -17,5 +17,5 @@ public interface Set<E> extends Iterable<E> {
 	public boolean equals(Set<E> S2);
 	
 	//Exercise 4
-	public Set<Set<E>> singletonSet();
+	public Set<Set<E>> singletonSets();
 }

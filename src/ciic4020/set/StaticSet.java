@@ -145,7 +145,8 @@ public class StaticSet<E> implements Set<E> {
 
 	//Exercise 2 
 	@Override
-	public boolean equals(Set<E> S2) {
+	public boolean equals(Set<E> S2) 
+	{
 		if(this.isSubSet(S2) && S2.isSubSet(this))
 			return true;
 		return false; 
@@ -153,13 +154,16 @@ public class StaticSet<E> implements Set<E> {
 
 	//Exercise 4
 	@Override
-	public Set<Set<E>> singletonSet() 
+	public Set<Set<E>> singletonSets() 
 	{
-		// TODO Auto-generated method stub
-		Set<Set<E>> result = new StaticSet<Set<E>>(this.size());  
-		
-		//code here
-		
+		Set<Set<E>> result = new StaticSet<Set<E>>(this.size());
+				
+		for(int i=0; i < this.size(); i++)
+		{
+			Set<E> tempSet = new StaticSet<E>(1);
+			tempSet.add(this.elements[i]);
+			result.add(tempSet);
+		}
 		return result;
 	}
 

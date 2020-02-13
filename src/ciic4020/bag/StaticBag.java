@@ -110,10 +110,21 @@ public class StaticBag implements Bag {
 		return new BagIterator();
 	}
 
-	@Override
-	public Bag moreFrequentThan(Object obj) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	//Exercise 1
+		@Override
+		public Bag moreFrequentThan(Object obj) 
+		{
+			Bag result = new StaticBag(this.size());
+			if(!this.isMember(obj))
+				//null since obj is not a member of the bag. 
+				//Not specified in instructions to return empty bag or null.
+				return null;
+			for(Object o: this)
+			{
+				if(!result.isMember(o) && this.count(o) > this.count(obj))
+					result.add(o);
+			}		
+			return result;
+		}
 
 }
